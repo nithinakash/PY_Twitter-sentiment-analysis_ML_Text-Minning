@@ -1,0 +1,30 @@
+Twitter Sentiment Analysis
+Extract tweets about a particular topic from twitter (recency = 1-7 days) and analyze the opinion of tweeples (people who use twitter.com) on this topic as positive, negative or neutral.
+
+What is sentiment analysis?
+Process of ‘computationally’ determining whether a piece of writing is positive, negative or neutral. It’s also known as opinion mining, deriving the opinion or attitude of a speaker.
+
+Why sentiment analysis?
+Business:
+In marketing field companies use it to develop their strategies, to understand customers’ feelings towards products or brand, how people respond to their campaigns or product launches and why consumers don’t buy some products.
+
+Politics:
+In political field, it is used to keep track of political view, to detect consistency and inconsistency between statements and actions at the government level. It can be used to predict election results as well!
+
+Public Actions:
+Sentiment analysis also is used to monitor and analyse social phenomena, for the spotting of potentially dangerous situations and determining the general mood of the blogosphere.
+
+Steps involved in Sentiment Analysis
+Traininig
+
+Prediction
+
+Training the Classifiers
+The classifiers need to be trained and to do that, we need to list manually classified tweets. Let's start with 3 positive, 3 neutral and 3 negative tweets.
+
+Preprocess tweets
+Lower Case - Convert the tweets to lower case.
+URLs - eliminate all of these URLs via regular expression matching or replace with generic word URL.
+@username - we can eliminate "@username" via regex matching or replace it with generic word AT_USER.
+#hashtag - hash tags can give us some useful information, so it is useful to replace them with the exact same word without the hash. E.g. #nike replaced with 'nike'.
+Punctuations and additional white spaces - remove punctuation at the start and ending of the tweets. E.g: ' the day is beautiful! ' replaced with 'the day is beautiful'. It is also helpful to replace multiple whitespaces with a single whitespace
